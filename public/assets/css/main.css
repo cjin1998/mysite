@@ -7,6 +7,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+canvas {
+        		height: 100%;
+        		position: fixed;
+        		width: 100%;
+      		}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -99,7 +112,7 @@ input, select, textarea {
 	}
 
 	body {
-		background:#f0ebec;;
+		background:white;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1818,6 +1831,18 @@ input, select, textarea {
 		}
 
 /* Button */
+	.skill {
+		margin-bottom: 20px;
+		
+
+	}
+
+	#one{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/*text-align: center;*/
+	}
 
 	input[type="submit"],
 	input[type="reset"],
@@ -1835,7 +1860,7 @@ input, select, textarea {
 		background-color: transparent;
 		border: solid 2px !important;
 		border-color: #9c727d !important;
-		border-radius: 3em;
+		/* border-radius: 3em; */
 		
 		color: black !important;
 		cursor: pointer;
@@ -1846,13 +1871,14 @@ input, select, textarea {
 		letter-spacing: 0.25em;
 		line-height: 4.75em;
 		outline: 0;
-		padding: 0 2em;
+		padding: 0 1em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
+
 
 		input[type="submit"]:after,
 		input[type="reset"]:after,
@@ -1869,7 +1895,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
 			transition: opacity 0.2s ease, transform 0.2s ease;
 			background: BLACK;
-			border-radius: 3em;
+			/* border-radius: 3em; */
 			content: '';
 			height: 100%;
 			left: 0;
@@ -2564,14 +2590,14 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 0.25em;
+		/* border-radius: 0.25em; */
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 0.25em;
+			/* border-radius: 0.25em; */
 			display: block;
 		}
 
@@ -3208,7 +3234,7 @@ input, select, textarea {
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
+			padding: 5em 5em 5em 5em ;
 			max-width: 100%;
 			width: 75em;
 		}
@@ -3216,7 +3242,7 @@ input, select, textarea {
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
-					padding: 4em 4em 2em 4em ;
+					padding: 4em 4em 4em 4em ;
 				}
 
 			}
@@ -3244,10 +3270,13 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-color:#deccd1;
 			
+			
+			
 		}
 
 		.wrapper.style1-alt {
-			background-color:#f0ebec;
+			background-color:white;
+			
 			
 			
 		}
@@ -3264,6 +3293,8 @@ input, select, textarea {
 
 		.wrapper.style3 {
 			background-color:#f0ebec;
+			display: flex;
+			justify-content: center;
 			
 		}
 
@@ -3322,10 +3353,10 @@ input, select, textarea {
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
 			transform: translateY(0);
-			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
+			-moz-transition: opacity 2s ease, -moz-transform 2s ease;
+			-webkit-transition: opacity 2s ease, -webkit-transform 2s ease;
+			-ms-transition: opacity 2s ease, -ms-transform 2s ease;
+			transition: opacity 2s ease, transform 2s ease;
 			opacity: 1.0;
 		}
 
@@ -3501,7 +3532,7 @@ input, select, textarea {
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 11em;
+		margin-left: 0;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3812,9 +3843,9 @@ input, select, textarea {
 		@media screen and (max-width: 4000px) {
 
 			#sidebar {
-				height: 3.5em;
+				height: 3em;
 				left: 0;
-				line-height: 3.5em;
+				line-height: 3em;
 				overflow: hidden;
 				padding: 0;
 				text-align: center;
@@ -3954,6 +3985,7 @@ input, select, textarea {
 		margin-left: 0px;
 		text-align: center;
 		align-items: center;
+		
 	}
 
 		#intro p {
@@ -3975,5 +4007,399 @@ input, select, textarea {
 			#intro {
 				background-attachment: scroll;
 			}
+
+		}
+
+
+
+
+.progress {
+  height: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+ background-image: -moz-linear-gradient(to left, #c9a7b1,#9c727d);
+				background-image: -webkit-linear-gradient(to left, #c9a7b1,#9c727d);
+				background-image: -ms-linear-gradient(to left,#c9a7b1,#9c727d);
+				background-image: linear-gradient(to left, #c9a7b1,#9c727d);
+				
+  overflow: visible; }
+
+  .progress:hover{
+	  background:black;
+	  opacity: 0.5;
+  }
+
+.progress-bar {
+  background: black;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 15px;
+  line-height: 1.2;
+  color:#9c727d;
+  font-weight: 600;
+  text-align: right;
+  position: relative;
+  overflow: visible;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px; }
+
+    .progress-bar:after {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 4px;
+    height: 10px;
+    content: '';
+    background: red;
+   /*  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; */ }
+  .progress-bar span {
+    position: absolute;
+    top: -22px;
+	right: -32px; }
+	
+	.progress-wrap h3{
+	padding-bottom: 1px;
+}
+
+.progress-wrap h3 {
+  font-size: 20px;
+  margin-bottom: 5px; }
+
+.progress-wrap{
+	margin-bottom: 30px;
+}
+
+
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #deccd1;
+  padding: 10px;
+}
+
+
+.grid-item {
+  margin-left:35px;
+  margin-right:35px;
+} 
+
+/*tiles*/
+
+.tiles {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		position: relative;
+		
+	}
+
+		.tiles article {
+			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+			transition: transform 0.5s ease, opacity 0.5s ease;
+			position: relative;
+			width: calc(33.33333% - 4.5em);
+		
+			margin-left: 2.2em;
+			margin-right: 2.2em;
+			margin-top: 2.2em;
+			margin-bottom: 2.2em;
+		
+
+			
+		}
+
+			.tiles article > .image {
+				-moz-transition: -moz-transform 0.5s ease;
+				-webkit-transition: -webkit-transform 0.5s ease;
+				-ms-transition: -ms-transform 0.5s ease;
+				transition: transform 0.5s ease;
+				position: relative;
+				display: block;
+				width: 100%;
+				overflow: hidden;
+			}
+
+				.tiles article > .image img {
+					display: block;
+					width: 100%;
+				}
+
+				.tiles article > .image:before {
+					pointer-events: none;
+					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
+					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
+					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
+					transition: background-color 0.5s ease, opacity 0.5s ease;
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 1.0;
+					z-index: 1;
+					opacity: 0.8;
+				}
+
+				.tiles article > .image:after {
+					pointer-events: none;
+					-moz-transition: opacity 0.5s ease;
+					-webkit-transition: opacity 0.5s ease;
+					-ms-transition: opacity 0.5s ease;
+					transition: opacity 0.5s ease;
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E"); */
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					opacity: 0.25;
+					z-index: 2;
+				}
+
+			.tiles article > a {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				-moz-justify-content: center;
+				-webkit-justify-content: center;
+				-ms-justify-content: center;
+				justify-content: center;
+				-moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
+				-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
+				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
+				transition: background-color 0.5s ease, transform 0.5s ease;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding: 1em;
+				
+				border-bottom: 0;
+				color: #ffffff;
+				text-align: center;
+				text-decoration: none;
+				z-index: 3;
+			}
+
+				.tiles article > a > :last-child {
+					margin: 0;
+				}
+
+				.tiles article > a:hover {
+					color: #ffffff !important;
+				}
+
+				.tiles article > a h2 {
+					margin: 0;
+				}
+
+				.tiles article > a .content {
+					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
+					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
+					transition: max-height 0.5s ease, opacity 0.5s ease;
+					width: 100%;
+					max-height: 0;
+					line-height: 1.5;
+					margin-top: 0.35em;
+					opacity: 0;
+				}
+
+					.tiles article > a .content > :last-child {
+						margin-bottom: 0;
+					}
+
+			.tiles article.style1 > .image:before {
+				background-color: #deccd1;
+				
+				
+			}
+
+			.tiles article.style2 > .image:before {
+				background-color: #9c727d;
+				
+				
+			}
+
+			.tiles article.style3 > .image:before {
+				background-color: #7bd0c1;
+			}
+
+			.tiles article.style4 > .image:before {
+				background-color: #c75b9b;
+			}
+
+			.tiles article.style5 > .image:before {
+				background-color: #ae85ca;
+			}
+
+			.tiles article.style6 > .image:before {
+				background-color: #8499e7;
+			}
+
+			body:not(.is-touch) .tiles article:hover > .image {
+				-moz-transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
+			}
+
+				body:not(.is-touch) .tiles article:hover > .image:before {
+					background-color: #333333;
+					opacity: 0.35;
+				}
+
+				body:not(.is-touch) .tiles article:hover > .image:after {
+					opacity: 0;
+				}
+
+			body:not(.is-touch) .tiles article:hover .content {
+				max-height: 15em;
+				opacity: 1;
+			}
+
+		* + .tiles {
+			margin-top: 2em;
+		}
+
+		body.is-preload .tiles article {
+			-moz-transform: scale(0.9);
+			-webkit-transform: scale(0.9);
+			-ms-transform: scale(0.9);
+			transform: scale(0.9);
+			opacity: 0;
+		}
+
+		body.is-touch .tiles article .content {
+			max-height: 15em;
+			opacity: 1;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.tiles {
+				margin: -1.25em 0 0 -1.25em;
+			}
+
+				.tiles article {
+					width: calc(33.33333% - 4.75em);
+		
+					margin-left: 2em;
+					margin-right: 2em;
+					margin-top: 2em;
+		
+
+				}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.tiles {
+				margin: -2.5em 0 0 -2.5em;
+			}
+
+				.tiles article {
+					width: calc(50% - 3.5em);
+					margin: 2.5em 0 0 2.5em;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.tiles {
+				margin: -1.25em 0 0 -1.25em;
+			}
+
+				.tiles article {
+					width: calc(50% - 2.25em);
+					margin: 1.25em 0 0 1.25em;
+				}
+
+					.tiles article:hover > .image {
+						-moz-transform: scale(1.0);
+						-webkit-transform: scale(1.0);
+						-ms-transform: scale(1.0);
+						transform: scale(1.0);
+					}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.tiles {
+				margin: 0;
+			}
+
+				.tiles article {
+					width: 100%;
+					margin: 1.25em 0 0 0;
+				}
 
 		}
