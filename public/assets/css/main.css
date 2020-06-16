@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background:#f0ebec;
+		background:#f0ebec;;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3474,7 +3474,7 @@ input, select, textarea {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 10em;
+		margin-left: 0em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3809,7 +3809,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 4000px) {
 
 			#sidebar {
 				height: 3.5em;
@@ -3880,6 +3880,65 @@ input, select, textarea {
 		}
 
 		
+		@media screen and (max-width: 736px) {
+
+		#sidebar {
+				height: 3.5em;
+				left: 0;
+				line-height: 3.5em;
+				overflow: hidden;
+				padding: 0;
+				text-align: center;
+				top: 0;
+				width: 100%;
+			}
+
+				#sidebar > .inner {
+					-moz-flex-direction: row;
+					-webkit-flex-direction: row;
+					-ms-flex-direction: row;
+					flex-direction: row;
+					-moz-align-items: -moz-stretch;
+					-webkit-align-items: -webkit-stretch;
+					-ms-align-items: -ms-stretch;
+					align-items: stretch;
+					height: inherit;
+					line-height: inherit;
+				}
+
+				#sidebar nav {
+					height: inherit;
+					line-height: inherit;
+				}
+
+			
+
+					#sidebar nav ul {
+						display: -moz-flex;
+						display: -webkit-flex;
+						display: -ms-flex;
+						display: flex;
+						height: inherit;
+						line-height: inherit;
+						margin: 0;
+					}
+
+						#sidebar nav ul li {
+							display: block;
+							height: inherit;
+							line-height: inherit;
+							margin: 0 0 0 2em;
+							padding: 0;
+						}
+
+					#sidebar nav a {
+						height: inherit;
+						line-height: inherit;
+						padding: 0;
+						font-size: 0.5em;
+					}
+
+						}
 
 /* Intro */
 
@@ -3911,7 +3970,7 @@ input, select, textarea {
 
 			}
 
-		@media screen and (max-width: 4000px) {
+		@media screen and (max-width: 1280px) {
 
 			#intro {
 				background-attachment: scroll;
