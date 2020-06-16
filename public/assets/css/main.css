@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #e0ced3;
+		background:#f0ebec;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1833,10 +1833,11 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
 		background-color: transparent;
-		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border: solid 2px !important;
+		border-color: #9c727d !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		
+		color: black !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1946,7 +1947,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			border-color: black !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -1966,7 +1967,7 @@ input, select, textarea {
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				border-color: #ffffff !important;
+				border-color:black !important;
 			}
 
 				input[type="submit"]:hover:active:after,
@@ -3242,27 +3243,28 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-color:grey;
-			margin-left: 20px;
+			
 		}
 
 		.wrapper.style1-alt {
-			background-color: white;
+			background-color:#f0ebec;
+			
 			
 		}
 
 		.wrapper.style2 {
 			background-color: grey;
-			margin-left: 20px;
+			
 		}
 
 		.wrapper.style2-alt {
 			background-color: #3e4094;
-			margin-left: 20px;
+			
 		}
 
 		.wrapper.style3 {
 			background-color:white;
-			margin-left: 20px;
+			
 		}
 
 		.wrapper.style3-alt {
@@ -3499,7 +3501,7 @@ input, select, textarea {
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 11.14em;
+		margin-left: 11em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3863,43 +3865,43 @@ input, select, textarea {
 					}
 
 						#sidebar nav a:after {
-							background-image: none;
-							background-color: #b74e91;
-						}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#sidebar {
-				display: none;
+				background-image: -moz-linear-gradient(to right,#d1cdce, #c9a7b1,#9c727d, black);
+				background-image: -webkit-linear-gradient(to right,#d1cdce, #c9a7b1,#9c727d, black);
+				background-image: -ms-linear-gradient(to right,#d1cdce, #c9a7b1,#9c727d, black);
+				background-image: linear-gradient(to right,#d1cdce, #c9a7b1,#9c727d, black);
+				-moz-transition: max-width 0.4s ease;
+				-webkit-transition: max-width 0.4s ease;
+				-ms-transition: max-width 0.4s ease;
+				transition: max-width 0.4s ease;
+				max-width: 0;
 			}
 
+
 		}
+
+		
 
 /* Intro */
 
 	#intro {
+		display: flex;
+		justify-content: center;
 		background-attachment: fixed;
-		background-color:white;
+		background-color:#f0ebec;
 		/* background-image: url("images/intro.svg"); */
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		margin-left: 20px
+		margin-left: 0px;
+		text-align: center;
+		align-items: center;
 	}
 
 		#intro p {
 			font-size: 1.25em;
 		}
 
-			@media screen and (max-width: 980px) {
-
-				#intro p br {
-					display: none;
-				}
-
-			}
+			
 
 			@media screen and (max-width: 736px) {
 
@@ -3909,7 +3911,7 @@ input, select, textarea {
 
 			}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 4000px) {
 
 			#intro {
 				background-attachment: scroll;
