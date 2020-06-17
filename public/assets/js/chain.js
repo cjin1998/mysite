@@ -44,7 +44,7 @@ Ball.prototype = {
         Math.floor(Math.random() * 256) +
         "," +
         Math.floor(Math.random() * 256) +
-        ", 0.05)";
+        ", 0.1)";
 
       this.direction = Math.atan2(
         Math.sin(this.direction),
