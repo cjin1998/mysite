@@ -7,7 +7,7 @@ router.get("/", function(req, res, next) {
 });
 
 router.get("/info", function(req, res, next) {
-  res.render("ball", { title: "Generic" });
+  res.render("generic", { title: "Generic" });
 });
 
 router.get("/elements", function(req, res, next) {
