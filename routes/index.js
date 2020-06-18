@@ -6,6 +6,10 @@ router.get("/", function(req, res, next) {
   res.render("index", { title: "Express" });
 });
 
+router.get("/multiplicity", function(req, res, next) {
+  res.render("multi", { title: "multi" });
+});
+
 router.get("/info", function(req, res, next) {
   res.render("generic", { title: "Generic" });
 });

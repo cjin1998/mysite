@@ -35,6 +35,10 @@ section, summary, time, mark, audio, video {
 	font-family: 'Open Sans', sans-serif;
 	vertical-align: baseline;}
 
+navi{
+	font-family: 'Courier Prime', monospace;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -3298,14 +3302,16 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: rgb(222, 204, 209,0.75);
-			
+			background-color:rgb(240, 235, 236,0.3); 
+			/* background-color: rgb(222, 204, 209,0.5);
+			 */
 			
 			
 		}
 
 		.wrapper.style1-alt {
-			background-color:rgb(240, 235, 236,0.6);
+			
+			background-color:rgb(240, 235, 236,0);
 			
 			
 			
@@ -3322,7 +3328,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color:rgb(240, 235, 236,0.3); 
+			background-color:rgb(240, 235, 236,0); 
 			/* background-image: linear-gradient(to right, #deccd1,  #f0ebec); */
 			
 			display: flex;
@@ -4548,7 +4554,7 @@ input, select, textarea {
 .prompt{
 
 	font-weight: 400;
-
+	font-family: 'Courier Prime', monospace;
 	text-shadow: 2px 2px rgba(156, 114, 125, 0.6);
 	color:black;
 
