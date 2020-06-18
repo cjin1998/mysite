@@ -4192,8 +4192,9 @@ input, select, textarea {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 2px;
-	margin-right:3px;
-	margin-left:3px;
+	/* margin-right:3px;
+	margin-left:3px; */
+	
 }
 
 /* .thing:hover{
