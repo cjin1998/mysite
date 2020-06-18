@@ -21,7 +21,7 @@ Ball.prototype = {
     this.y += Math.sin(this.direction) * this.speed;
 
     if (this.x < 0) {
-      this.x = this.radius;
+      this.x = 0;
       this.color =
         "rgb(" +
         Math.floor(Math.random() * 256) +
@@ -29,12 +29,13 @@ Ball.prototype = {
         Math.floor(Math.random() * 256) +
         "," +
         Math.floor(Math.random() * 256) +
-        ", 0.05)";
+        ", 0)";
 
       this.direction = Math.atan2(
         Math.sin(this.direction),
         Math.cos(this.direction) * -1
       );
+      this.remove();
     } else if (this.x + this.radius > width) {
       this.x = width - this.radius;
       this.color =
@@ -44,16 +45,17 @@ Ball.prototype = {
         Math.floor(Math.random() * 256) +
         "," +
         Math.floor(Math.random() * 256) +
-        ", 0.1)";
+        ", 0)";
 
       this.direction = Math.atan2(
         Math.sin(this.direction),
         Math.cos(this.direction) * -1
       );
+      this.remove();
     }
 
     if (this.y < 0) {
-      this.y = this.radius;
+      this.y = 0;
       this.color =
         "rgb(" +
         Math.floor(Math.random() * 256) +
@@ -67,6 +69,7 @@ Ball.prototype = {
         Math.sin(this.direction) * -1,
         Math.cos(this.direction)
       );
+      this.remove();
     } else if (this.y + this.radius > height) {
       this.y = height - this.radius;
 
@@ -83,6 +86,7 @@ Ball.prototype = {
         Math.sin(this.direction) * -1,
         Math.cos(this.direction)
       );
+      this.remove();
     }
   }
 };

@@ -1,5 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 
 
 
@@ -30,7 +32,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: 'Courier Prime', monospace;
+	font-family: 'Open Sans', sans-serif;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -41,9 +43,14 @@ body {
 	line-height: 1;
 }
 
-.myname:hover{
-	color: rgb(255, 0, 0, 0.5);
+.myname{
+	font-weight: 400;
+	font-size: 80px;
+	text-shadow: 4px 4px rgba(0,0,0, 0.6);
+	color:#9c727d;
 }
+
+
 
 ol, ul {
 	list-style: none;
@@ -1840,6 +1847,7 @@ input, select, textarea {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		
 		/*text-align: center;*/
 	}
 
@@ -3290,14 +3298,14 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color:#deccd1;
+			background-color: rgb(222, 204, 209,0.75);
 			
 			
 			
 		}
 
 		.wrapper.style1-alt {
-			background-color:#f0ebec;
+			background-color:rgb(240, 235, 236,0.6);
 			
 			
 			
@@ -3314,7 +3322,9 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color:#f0ebec;
+			background-color:rgb(240, 235, 236,0.3); 
+			/* background-image: linear-gradient(to right, #deccd1,  #f0ebec); */
+			
 			display: flex;
 			justify-content: center;
 			
@@ -3581,6 +3591,8 @@ input, select, textarea {
 	#header + #wrapper + #footer > .inner {
 		margin: 0 0 0 0;
 	}
+
+	
 
 /* Sidebar */
 
@@ -3950,8 +3962,9 @@ input, select, textarea {
 		display: flex;
 		justify-content: center;
 		background-attachment: fixed;
-		background-color:#f0ebec;
-		/* background-image: url("images/intro.svg"); */
+		/* background-image: linear-gradient(to right,#9c727d, #deccd1,  #f0ebec); */
+		background-color:rgb(200,200,200,0);
+		
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -3988,8 +4001,8 @@ input, select, textarea {
 
 .progress {
   height: 6px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
  background-image: -moz-linear-gradient(to left, #c9a7b1,#9c727d);
 				background-image: -webkit-linear-gradient(to left, #c9a7b1,#9c727d);
 				background-image: -ms-linear-gradient(to left,#c9a7b1,#9c727d);
@@ -4046,11 +4059,11 @@ input, select, textarea {
 
 
 .fade-in {
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
 }
 @keyframes fadeIn {
   0% {opacity:0;}
@@ -4081,7 +4094,7 @@ input, select, textarea {
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #deccd1;
+  
   padding: 10px;
 }
 
@@ -4093,12 +4106,19 @@ input, select, textarea {
   padding: 5px;
 } 
 
+
+.skillname{
+	font-weight:400;
+	text-shadow: 1px 2px 2px rgba(0,0,0, 0.3);
+}
+
 .skillname:hover{
-	color:red;
+	text-shadow: 1px 2px 2px rgba(247, 5, 53, 0.3);
 }
 
 .projectname{
-	font-weight:600
+	font-weight:400;
+	text-shadow: 1px 2px 2px rgba(0,0,0, 0.3);
 }
 
 .projectname:hover{
@@ -4118,7 +4138,7 @@ input, select, textarea {
 .wgrid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #f0ebec;
+ 
   padding: 10px;
 
 }
@@ -4172,16 +4192,18 @@ input, select, textarea {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 2px;
+	margin-right:3px;
+	margin-left:3px;
 }
 
-.thing:hover{
+/* .thing:hover{
 	opacity: 0.7;
 	background: rgb(255, 5, 18,0.2);
 	-moz-transform: scale(1);
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-}
+} */
 
 
 
@@ -4196,7 +4218,6 @@ input, select, textarea {
 .grid-container {
   		display: grid;
   		grid-template-columns: 100%;
-  		background-color: #deccd1;
   		padding: 10px;
 
 }		
@@ -4520,3 +4541,23 @@ input, select, textarea {
 	transform: scale(1.175); 
 	border: 1.5px solid #9c727d !important;
 	padding: 15px;} */
+
+
+
+.prompt{
+
+	font-weight: 400;
+
+	text-shadow: 2px 2px rgba(156, 114, 125, 0.6);
+	color:black;
+
+/* 	border:solid #9c727d 1px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+	padding-top: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	margin-right:3px;
+	margin-left:3px;
+ */
+}
