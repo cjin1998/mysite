@@ -7,7 +7,7 @@ router.get("/", function(req, res, next) {
 });
 
 router.get("/multiplicity", function(req, res, next) {
-  res.render("multi", { title: "multi" });
+  res.render("carousel", { title: "multi" });
 });
 
 router.get("/info", function(req, res, next) {
