@@ -4570,68 +4570,74 @@ input, select, textarea {
 }
 
 
-.carousel{
-	position: relative;
-	height: 400px;
-	width: 50%;
-	margin: 0 auto;
+.prompt{
+
+	font-weight: 400;
+	font-family: 'Courier Prime', monospace;
+	text-shadow: 2px 2px rgba(156, 114, 125, 0.6);
+	color:black;
+
 }
 
-.carousel_track-container{
-	background: rgb(222, 204, 209,0);
-	height: 100%;
+.theprompt{
+
+	font-weight: 400;
+	font-family: 'Courier Prime', monospace;
+	text-shadow: 2px 2px rgba(156, 114, 125, 0.6);
+	color:black;
+	padding-top:15px;
+
+}
+
+.nameofproject{
+	/* background-color:blue; */
+	text-align:center;
+	align-items:center;
+	
+	padding-bottom:10px;
+}
+
+.carousel{
+	/* background-color:red;  */
+	align-content: center;
+	align-items: center;
+	
 	position: relative;
-	overflow: hidden;
+	padding-top:10px;
+	padding-bottom: 10px;
+	
+	
 }
-.carousel_track{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	position: relative;
-	height: 100%;
-	transition: transform 250ms ease-in;
+
+.projectbutton{
+	margin-left:20px;
+	margin-right:20px;
+	/* font-family: 'Courier Prime', monospace; */
+
 }
-.carousel_slide{
-	position: absolute;
-	top: 0;
-	left:0;
-	bottom: 0;
-	width: 100%;
+
+.cgrid-item {
+ 
+  align-content: center;
+  align-items: center;
+  margin-left:20%;
+  margin-right:20%;
+  margin-bottom: 60px;
+  margin-top:40px;
+  /* border: solid white 1.5px;  */
+  padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #f0ebec;
+  /* rgb(222, 204, 209,0.5); */
+} 
+
+
+.cgrid-item:hover{
+	box-shadow: 0 8px 16px 0 rgba(156, 114, 125,0.9);
+	transform: scale(1.05);
 }
-.carousel_button{
-	position: absolute;
-	top:50%;
-	transform: translateY(-50%);
-	background: transparent;
-	border: 0;
-	cursor: pointer;
-}
-.carousel_button--left{
-	left: -40px;
-}
-.carousel_button--right{
-	right: -40px;
-}
-.carousel_button img{
-	width: 18px;
-}
-.carousel_nav{
-	display: flex;
-	justify-content: center;
-	padding: 10px 0;
-}
-.carousel_indicator{
-	border:0;
-	border-radius: 50%;
-	width: 15px;
-	height: 15px;
-	background: rgba(0,0,0,0.3);
-	margin: 0 10px;
-	cursor: pointer;
-}
-.carousel_indicator.current-slide{
-	background: rgba(0,0,0,0.75);
-}
-.is-hidden{
-	display: none;
+
+.techused{
+	text-shadow: 1px 2px 2px rgba(0,0,0, 0.3);
 }

@@ -29,7 +29,7 @@ Ball.prototype = {
         Math.floor(Math.random() * 256) +
         "," +
         Math.floor(Math.random() * 256) +
-        ", 0)";
+        ", 0.3)";
 
       this.direction = Math.atan2(
         Math.sin(this.direction),
@@ -45,7 +45,7 @@ Ball.prototype = {
         Math.floor(Math.random() * 256) +
         "," +
         Math.floor(Math.random() * 256) +
-        ", 0)";
+        ", 0.2)";
 
       this.direction = Math.atan2(
         Math.sin(this.direction),
@@ -63,7 +63,7 @@ Ball.prototype = {
         Math.floor(Math.random() * 256) +
         "," +
         Math.floor(Math.random() * 256) +
-        ", 0)";
+        ", 0.5)";
 
       this.direction = Math.atan2(
         Math.sin(this.direction) * -1,
@@ -80,7 +80,7 @@ Ball.prototype = {
         Math.floor(Math.random() * 256) +
         "," +
         Math.floor(Math.random() * 256) +
-        ", 0)";
+        ", 0.5)";
 
       this.direction = Math.atan2(
         Math.sin(this.direction) * -1,
@@ -98,7 +98,7 @@ var balls = new Array();
 let x = document.documentElement.clientWidth * 0.5;
 let y = document.documentElement.clientHeight * 0.5;
 
-for (let index = 0; index < 12; index++) {
+for (let index = 0; index < 20; index++) {
   balls.push(
     new Ball(x, y, Math.floor(Math.random() * 10 + Math.random() * 40 + 30))
   );
