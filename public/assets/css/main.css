@@ -4770,12 +4770,19 @@ div {
 }
 
 .infosection{
-	margin-top:30px;
+	margin-top:20px;
+	margin-bottom:0;
+}
+
+.infos{
+	margin-top:0;
+	margin-bottom:20px;
 }
 
 .infoname{
 	font-size:120%;
 	font-weight:600;
+	margin-bottom:2px;
 	
 }
 
