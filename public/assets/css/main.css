@@ -2552,8 +2552,8 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
-		color: white;
-		background-color: #261c3e;
+		color: black;
+		background-color: transparent;
 	}
 
 		.icon:before {
@@ -2589,7 +2589,7 @@ input, select, textarea {
 			width: 2.5em;
 			height: 2.5em;
 			display: block;
-			background:black;
+			background: transparent;
 			border-radius: 100%;
 			color: blue;
 			text-align: center;
