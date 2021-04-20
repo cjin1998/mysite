@@ -37,6 +37,7 @@ section, summary, time, mark, audio, video {
 
 navi{
 	font-family: 'Courier Prime', monospace;
+	
 }
 
 article, aside, details, figcaption, figure,
@@ -48,11 +49,15 @@ body {
 }
 
 .myname{
+	
+	font-weight: 700;
+	font-size: 70px;
+	text-shadow: 4px 4px rgba(86, 220, 192, 0);
+	color: #ccd6f6;
+}
 
-	font-weight: 400;
-	font-size: 80px;
-	text-shadow: 4px 4px rgba(255,255,255, 0.6);
-	color:#9c727d;
+.myname:hover{
+	color: #62f9d6;
 }
 
 
@@ -3459,7 +3464,7 @@ input, select, textarea {
 
 		#header > .title {
 			border: 0;
-			color: #ffffff;
+			color: blue;
 			display: block;
 			font-size: 1.25em;
 			font-weight: bold;
@@ -3491,7 +3496,7 @@ input, select, textarea {
 
 					#header > nav > ul > li a {
 						border: 0;
-						color: rgba(255, 255, 255, 0.35);
+						color:blue;
 						display: inline-block;
 						font-size: 0.6em;
 						font-weight: bold;
@@ -3500,7 +3505,7 @@ input, select, textarea {
 					}
 
 						#header > nav > ul > li a:hover {
-							color: rgba(255, 255, 255, 0.55);
+							color: blue;
 						}
 
 						#header > nav > ul > li a.active {
@@ -3822,20 +3827,20 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: #b8b2b4;
+			color:#adb8d6;
 			display: block;
 			font-size: 1em;
 			
-			letter-spacing: 0.25em;
+			letter-spacing: 0.01em;
 			line-height: 1.75;
 			outline: 0;
 			padding: 1.35em 0;
 			position: relative;
 			text-decoration: none;
-			text-transform: uppercase;
+			
 		}
 
-			#sidebar nav a:before, #sidebar nav a:after {
+			/* #sidebar nav a:before, #sidebar nav a:after {
 				border-radius: 0.2em;
 				bottom: 0;
 				content: '';
@@ -3843,10 +3848,10 @@ input, select, textarea {
 				position: absolute;
 				right: 0;
 				width: 100%;
-			}
+			} */
 
-			#sidebar nav a:before {
-				background: white;
+			/* #sidebar nav a:before {
+				background: blue
 			}
 
 			#sidebar nav a:after {
@@ -3860,13 +3865,13 @@ input, select, textarea {
 				transition: max-width 0.2s ease;
 				max-width: 0;
 			}
-
+ */
 			#sidebar nav a:hover {
-				color:#9c727d;
+				color:#62f9d6;
 			}
 
 			#sidebar nav a.active {
-				color: Black;
+				color: #62f9d6;
 			}
 
 				#sidebar nav a.active:after {
